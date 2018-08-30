@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path path="images/" name="myimages" />
+    <files-path path="video/" name="myvideos" />
+    <files-path path="audio/" name="myaudio" />
+    <files-path path="text/" name="mynotes" />
+    <external-path path="." name="storage/emulated/0"/>
+    <external-path path="./Documents" name="storage/emulated/0"/>
+</paths>

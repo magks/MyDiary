@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Diary</string>
+
+    <string name="main_audio">Record Audio</string>
+    <string name="main_camera">Take Photo</string>
+    <string name="main_video">Record Video</string>
+    <string name="main_note">Make Note</string>
+
+    <string name="main_to_calendar">See Calendar</string>
+    <string name="save_note">Save Note</string>
+
+</resources>
