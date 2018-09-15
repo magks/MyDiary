@@ -52,13 +52,13 @@ class TextActivity : AppCompatActivity() {
         val fileOut: FileOutputStream = openFileOutput(fileName, MODE_PRIVATE)
         val outputWriter = OutputStreamWriter(fileOut)
 
-        sendResultBackToMainDiaryPage(fileName)
-
         outputWriter.write(editText.text.toString())
         outputWriter.close()
 
         Toast.makeText(baseContext, "File Saved Successfully: $fileName",
                 Toast.LENGTH_SHORT).show()
+
+        sendResultBackToMainDiaryPage(fileName)
 
     } catch (e: Exception) {
         e.printStackTrace()

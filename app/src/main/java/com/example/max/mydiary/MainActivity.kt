@@ -54,20 +54,16 @@ class MainActivity : AppCompatActivity() {
         val diaryPageFileReader =  fetchDiaryPageFile() //BufferedReader(FileReader( getFileStreamPath(diaryPageFileName) ))
 //read file into stream, try-with-resources
         try {
+            diaryPageData = arrayListOf() //initialize empty array array list to hold diary page data
             diaryPageFileReader.lines().use { stream ->
                 stream.forEach { diaryEntry ->
-                    diaryPageData.add(diaryEntry)
+                    diaryPageData.add(diaryEntry) //add diary entry to array list
                 }
             }
         } catch (e: IOException) {
             e.printStackTrace()
         }
-       // fillDiaryDataEntries()
     }
-
-
-
-
 
     private fun fetchDiaryPageFile(): BufferedReader {
 
